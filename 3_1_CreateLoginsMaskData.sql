@@ -18,10 +18,6 @@ EXEC sp_addsrvrolemember 'dev_team', 'processadmin';
 GRANT VIEW SERVER STATE TO dev_team;
 GRANT EXECUTE ON DBA.dbo.sp_WhoIsActive TO dev_team;
 
-USE DBA;   
-GRANT EXECUTE ON OBJECT::dbo.sp_WhoIsActive TO dev_team;  
-GO
-
 -- Creating user for login with read-only access in Human Resources database
 USE HumanResources;
 GO
