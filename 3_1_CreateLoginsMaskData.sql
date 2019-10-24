@@ -17,6 +17,7 @@ EXEC sp_addsrvrolemember 'dev_team', 'processadmin';
 -- Granting additional permissions
 GRANT VIEW SERVER STATE TO dev_team;
 
+-- Creating user login with execute permission in DBA database
 USE DBA;
 GO
 CREATE USER dev_team FOR LOGIN dev_team;
