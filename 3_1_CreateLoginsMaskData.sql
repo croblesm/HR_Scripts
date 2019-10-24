@@ -8,10 +8,14 @@ SET NOCOUNT ON
 -- Creating login for development team
 USE master
 GO
+-- Creating login
 CREATE LOGIN dev_team WITH PASSWORD=N'_D3v3L0pM3nt_',
 DEFAULT_DATABASE=HumanResources, CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF;
-EXEC sp_addsrvrolemember 'dev_team', 'processadmin';  
+EXEC sp_addsrvrolemember 'dev_team', 'processadmin';
+
+-- Granting additional permissions
 GRANT VIEW SERVER STATE TO dev_team;
+GRANT EXECUTE ON DBA.dbo.sp_WhoIsActive TO dev_team;
 
 -- Creating user for login with read-only access in Human Resources database
 USE HumanResources
@@ -21,6 +25,7 @@ ALTER ROLE db_datawriter ADD MEMBER dev_team;
 ALTER ROLE db_ddladmin ADD MEMBER dev_team;
 ALTER ROLE db_backupoperator ADD MEMBER dev_team;
 
+-- Start flag
 SELECT 'Logins succesfully created'
 
 -- ***** Masking data using Dynamic data masking ***** 
@@ -55,4 +60,5 @@ ALTER COLUMN first_name ADD MASKED WITH (FUNCTION = 'partial(2,"XXX",2)');
 ALTER TABLE HumanResources.dbo.Dependents  
 ALTER COLUMN last_name ADD MASKED WITH (FUNCTION = 'partial(2,"XXX",2)');
 
+-- End flag
 SELECT 'Data has been masked'
