@@ -4,10 +4,6 @@
 ---------------------------------------------------------------------------------
 SET NOCOUNT ON
 
-USE [msdb]
-GO
-
-
 BEGIN TRANSACTION
 DECLARE @ReturnCode INT
 SELECT @ReturnCode = 0
