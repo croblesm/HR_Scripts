@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------- 
 -- DEMO 4 --
--- Create activity logging job using WhoIsActive table created in DBA database
+-- Create DBA - Activity logging job using WhoIsActive table created in DBA db
 ---------------------------------------------------------------------------------
 SET NOCOUNT ON
 
