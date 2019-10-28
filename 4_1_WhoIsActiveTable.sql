@@ -5,9 +5,6 @@
 
 SET NOCOUNT ON
 
-USE DBA;
-GO
-
 -- Declaring variables
 DECLARE 
         @destination_table VARCHAR(500) = 'WhoIsActive'
