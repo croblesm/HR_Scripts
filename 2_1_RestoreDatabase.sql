@@ -16,7 +16,8 @@ BEGIN TRY
     FROM DISK = '/db_scripts/backups/hr_20191106.bak'
     WITH MOVE 'HumanResources_data' TO '/mssql_data/HR.mdf',
     MOVE 'HumanResources_log' TO '/mssql_log/HR_log.ldf',
-    NOUNLOAD,  
+    NOUNLOAD,
+    REPLACE,
     STATS = 5; 
 END TRY 
 BEGIN CATCH  
