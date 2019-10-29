@@ -4,7 +4,7 @@
 ---------------------------------------------------------------------------------
 
 -- Get backup metadata (optional)
---RESTORE FILELISTONLY FROM DISK = '/db_scripts/backups/humanresources_backup_2019_1105.bak';
+--RESTORE FILELISTONLY FROM DISK = '/db_scripts/backups/hr_20191106.bak';
 
 -- Restore database using shared folder
 SET NOCOUNT ON
