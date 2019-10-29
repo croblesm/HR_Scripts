@@ -36,7 +36,6 @@ ALTER ROLE db_backupoperator ADD MEMBER dev_team;
 SELECT 'Logins succesfully created';
 
 -- ***** Masking data using Dynamic data masking ***** 
---
 -- ***** Employees data *****
 -- First name
 ALTER TABLE HumanResources.dbo.Employees  
