@@ -32,9 +32,8 @@ ALTER ROLE db_datawriter ADD MEMBER dev_team;
 ALTER ROLE db_ddladmin ADD MEMBER dev_team;
 ALTER ROLE db_backupoperator ADD MEMBER dev_team;
 
-
 -- Start flag
-SELECT 'Logins succesfully created'
+SELECT 'Logins succesfully created';
 
 -- ***** Masking data using Dynamic data masking ***** 
 --
@@ -69,4 +68,4 @@ ALTER TABLE HumanResources.dbo.Dependents
 ALTER COLUMN last_name ADD MASKED WITH (FUNCTION = 'partial(2,"XXX",2)');
 
 -- End flag
-SELECT 'Data has been masked'
+SELECT 'Data has been masked';
