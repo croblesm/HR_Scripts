@@ -1,14 +1,16 @@
 # Human resources scripts - DBA Mastery team
 
+This is the collection of DBA scripts to be deploy when using the Human Resources development docker image for SQL Server.
 
-``` bash
-HR_Scripts
-├── 1_1_CreateDBADatabase.sql  
-├── 2_1_RestoreDatabase.sql  
-├── 3_1_CreateLoginsMaskData.sql  
-├── 4_1_WhoIsActiveTable.sql # 👉 New script to create table for activity logging job  
-├── 5_1_WhoIsActiveJob.sql # 👉 New script to create job "DBA - Activity logging"  
-```
+> v 1.0
+* 1_1_CreateDBADatabase.sql - Script to create the DBA database
+* 2_1_RestoreDatabase.sql - Script to restore the Human resources database
+* 3_1_CreateLoginsMaskData.sql - Script to create development login and mask data
+
+> v 2.0
+* 4_1_WhoIsActiveTable.sql # 👉 New script to create table for activity logging job  
+* 5_1_WhoIsActiveJob.sql # 👉 New script to create job "DBA - Activity logging"  
+
 
 # Questions?
 If you have questions or comments about this demo, don't hesitate to contact me at <crobles@dbamastery.com>
