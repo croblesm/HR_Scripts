@@ -1,12 +1,14 @@
 # Human resources scripts - DBA Mastery team
 
 
-HR_Scripts  
+``` bash
+HR_Scripts
 ├── 1_1_CreateDBADatabase.sql  
 ├── 2_1_RestoreDatabase.sql  
 ├── 3_1_CreateLoginsMaskData.sql  
 ├── 4_1_WhoIsActiveTable.sql # 👉 New script to create table for activity logging job  
 ├── 5_1_WhoIsActiveJob.sql # 👉 New script to create job "DBA - Activity logging"  
+```
 
 # Questions?
 If you have questions or comments about this demo, don't hesitate to contact me at <crobles@dbamastery.com>
