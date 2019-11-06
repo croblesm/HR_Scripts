@@ -1,4 +1,5 @@
-# Human resources scripts - DBA Mastery team
+# Human Resources SQL scripts
+## DBA Team
 
 This is the collection of DBA scripts to be deploy when using the Human Resources development docker image for SQL Server.
 
