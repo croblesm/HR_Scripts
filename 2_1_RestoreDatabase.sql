@@ -13,7 +13,7 @@ USE master
 GO
 BEGIN TRY  
     RESTORE DATABASE HumanResources
-    FROM DISK = '/db_scripts/backups/hr_20191106.bak'
+    FROM DISK = '/db_scripts/backups/hr_backup.bak'
     WITH MOVE 'HumanResources_data' TO '/mssql_data/HR.mdf',
     MOVE 'HumanResources_log' TO '/mssql_log/HR_log.ldf',
     NOUNLOAD,
